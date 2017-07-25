@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	/* The animation code */
+	@keyframes glitter {
+	    0%   {color:red;}
+		10%	 {color:orange;}
+	    25%  {color:yellow;}
+	    45%	 {color:green;}
+	    60%  {color:blue;}
+	    70%  {color:indigo;}
+	    85%  {color:purple;}
+	    100% {color:pink;}
+	}
+
+	/* The element to apply the animation to */
+	.rainbowText {
+	    animation: glitter 4s infinite;
+	}
+</style>
+
+<head>
+
+	<!-- Ensures proper rendering and touch zooming on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Links to bootstrap for CSS styling -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Links to Google Fonts used -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light+Two" rel="stylesheet">
+
+	<!-- Specifies that my website is UTF-8 character set -->
+	<meta charset="UTF-8">
+
+	<!-- Titles my page in tabs and for search engines -->
+	<title>Jon's Bootstrap Contact Page</title>
+
+</head>
+
+<!-- Declares body; sets background image -->
+<body style="background-image: url(./images/redox_01.png);">
+	
+	<!-- Calls Boostrap Navbar theme -->
+	<nav class="navbar navbar-default">
+
+	  	<div class="container-fluid">
+			
+			<!-- List primary navbar button, sets font, color, style -->
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#" style="font-family: 'Pacifico', cursive; color: #FFD619; background-color: #14CCC2;">Jon Christensen</a>
+	    	</div>
+			
+			<!-- Lists other navbar button links-->
+		    <ul class="nav navbar-nav">
+		      <li><a href="./index.html">About Me</a></li>
+		      <li><a href="./portfolio.html">My Portfolio</a></li>
+		      <li><a href="./contact.html">Contact Me</a></li>
+		    </ul>
+
+	  	</div>
+	</nav>
+
+	<!-- Container holding main body, with a white background, thin grey border, curverd corners, and slightly padding-->
+	<div class="container" style="background-color:white; border: 1px solid lightgrey; border-radius: 5px; padding: 10px;">
+	
+		<div class="row">
+			
+			<!-- Content occupying left 75% of page -->
+			<div class="col-md-9">
+				<!-- Sets font and underline for main message on the page -->
+				<h1 style="border-bottom: 1px solid lightgrey; padding-bottom: 10px; font-family: 'Shadows Into Light Two', cursive; font-weight: bold;">Please get in touch with me.</h1>
+
+				<br />
+
+				<p>Hey <u class="rainbowText"><b>you.</b></u> I get the feeling that you're a very interesting person. The kind of person that likes long walks along the beach and dancing in the moonlight.</p>
+
+				<br />
+
+				<p>No? You don't? Ok, well then please give me your information so I can know to avoid you in the future.</p>
+				
+				<br />
+				<p>Gracias</p>
+			
+				<br />
+				
+				<!-- Contact form for someone to enter their info. Utilizes Bootstrap classes -->
+			 	<form>
+                    <div class="form-group">
+                    	<label for="exampleInputName2">Name</label>
+                    	<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                    	<label for="exampleInputEmail2">Email</label>
+                    	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Your.Name@example.com">
+                    </div>
+                    <div class="form-group ">
+                    	<label for="exampleInputText">Your Message</label>
+                    	<textarea  class="form-control" placeholder="Description"></textarea> 
+                    </div>
+                    <button type="submit" class="btn btn-default">Send Message</button>
+        		</form>
+			</div>
+
+
+			<!-- Content occupying right quarter of the page; in this case, a side header-->
+			<div class="col-md-3">
+				
+				<!-- Picture of me -->
+			 	<img src="./images/61722_1277585871062_7271209_a.jpg" alt="Jon's profile picture" class="img-thumbnail">
+				
+			 	<h2 style="text-align: center;"">Check me out!</h2>
+			 	
+				<!-- Uses a bootstrap row to have three columns -->
+			 	<div class="row">
+			 		<div class="col-md-4">
+					 	<!-- Icon for my LinkedIn page -->
+						<a href="https://linkedin.com/in/jonlchristensen/" target="_blank"><img src="./images/if_social_media_logo_linkedin_1078324.svg" alt="LinkedIn profile"></a>
+					</div>
+					<div class="col-md-4">
+						<!-- Icon for my GitHub profile -->
+						<a href="https://github.com/jonchr" target="_blank"><img src="./images/if_github_social_media_online_1006758.svg" alt="Github profile"></a>
+					</div>
+					<div class="col-md-4">
+						<!-- Icon for my StackOverflow -->
+						<a href="https://stackoverflow.com/users/8303324/jon-christensen" target="_blank"><img src="./images/if_stack_1287510.svg" alt="Link to StackOverflow"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sticky footer for bottom of page -->
+	<footer class="navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<p class="text-muted">&#x24B8 Copyright 2017 Jon Christensen</p>
+		</div>
+	</footer>
+	
+</body>
+
+</html>
