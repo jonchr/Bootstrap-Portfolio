@@ -25,4 +25,4 @@ The background image for this page is **Redox 01** and was used with permission 
 
 ## Screenshots
 ### Main/About Page, default width
-![Main Page](assets/images/main_page.png)
+![Main Page](images/main_page.png)
