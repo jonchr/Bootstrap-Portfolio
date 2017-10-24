@@ -1,5 +1,5 @@
 # Responsive-Portfolio
-This is a bootstrap version of my original website built solely using HTML5, CSS3, and Bootstrap. A live version can be viewed at https://jonchr.github.io/Bootstrap-Portfolio
+This is a bootstrap version of my original website built solely using HTML5, CSS3, and Bootstrap.
 
 ## Description
 
